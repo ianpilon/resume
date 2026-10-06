@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>body{margin:0}</style>
+<title>Ian Timotheos-Pilon</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap">
+<style>
+  /* Layout: one quiet column; section labels sit in a left rail on wide screens and stack above on phones. */
+  :root {
+    --bg: #fbfbfd;
+    --fg: #16192a;
+    --muted: #596077;
+    --rule: #e2e4ee;
+    --accent: #3550c9;
+    --display: "Instrument Serif", Georgia, "Times New Roman", serif;
+    --body: "Instrument Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0f1220; --fg: #e6e8f2; --muted: #9aa0b8; --rule: #262b40; --accent: #93a6ff;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0f1220; --fg: #e6e8f2; --muted: #9aa0b8; --rule: #262b40; --accent: #93a6ff;
+    color-scheme: dark;
+  }
+
+  body { background: var(--bg); color: var(--fg); font: 400 16px/1.6 var(--body); }
+  .page { max-width: 46rem; margin: 0 auto; padding-inline: 20px; padding-block: 56px 72px; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; text-underline-offset: 3px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+
+  header { display: grid; gap: 10px; padding-bottom: 32px; border-bottom: 1px solid var(--rule); }
+  h1 { font: 400 clamp(2.4rem, 7vw, 3.4rem)/1.05 var(--display); letter-spacing: -0.01em; margin: 0; text-wrap: balance; }
+  .tagline { margin: 0; font-size: 1.05rem; color: var(--muted); }
+  .contact { display: flex; flex-wrap: wrap; gap: 4px 18px; margin: 6px 0 0; padding: 0; list-style: none; font-size: 0.9rem; }
+  .contact li { color: var(--muted); }
+
+  section { display: grid; grid-template-columns: 9rem minmax(0, 1fr); gap: 0 28px; padding-block: 32px; border-bottom: 1px solid var(--rule); }
+  section:last-of-type { border-bottom: 0; }
+  h2 { margin: 0; font: 500 0.72rem/2.2 var(--body); letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+  .body { min-width: 0; display: grid; gap: 22px; }
+  p { margin: 0; }
+
+  .role { display: grid; gap: 10px; }
+  .head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 2px 16px; }
+  .title { font-weight: 600; font-size: 1.02rem; }
+  .org { color: var(--muted); }
+  .dates { font: 400 0.78rem/1.6 var(--mono); color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .note { color: var(--muted); font-size: 0.95rem; }
+  .sub { display: grid; gap: 8px; padding-left: 14px; border-left: 1px solid var(--rule); }
+  .sub .title { font-size: 0.97rem; color: var(--accent); }
+
+  ul.items { margin: 0; padding: 0; list-style: none; display: grid; gap: 10px; }
+  ul.items li { position: relative; padding-left: 16px; }
+  ul.items li::before { content: ""; position: absolute; left: 0; top: 0.72em; width: 6px; height: 1px; background: var(--accent); }
+  b { font-weight: 600; }
+  .when { color: var(--muted); }
+
+  dl.skills { margin: 0; display: grid; gap: 10px; }
+  dl.skills div { display: grid; gap: 2px; }
+  dt { font-weight: 600; }
+  dd { margin: 0; color: var(--fg); }
+
+  @media (max-width: 640px) {
+    .page { padding-block: 36px 56px; }
+    section { grid-template-columns: minmax(0, 1fr); gap: 12px; padding-block: 26px; }
+  }
+</style>
+</head>
+<body>
+<main class="page">
+  <header>
+    <h1>Ian Timotheos-Pilon</h1>
+    <p class="tagline">Founder and forward deployed AI engineer. Product leader. Community builder.</p>
+    <ul class="contact">
+      <li><a href="https://www.linkedin.com/in/ianpilon/">linkedin.com/in/ianpilon</a></li>
+      <li><a href="https://github.com/ianpilon">github.com/ianpilon</a></li>
+      <li><a href="https://voiceclaw.ca/">voiceclaw.ca</a></li>
+      <li>Waterloo, Ontario, Canada</li>
+      <li><a href="Ian-Timotheos-Pilon-Resume.pdf" download>Download PDF</a></li>
+    </ul>
+  </header>
+
+  <section>
+    <h2>Summary</h2>
+    <div class="body">
+      <p>Founder of VoiceClaw, backed by LAUNCH (Jason Calacanis). As a solo forward deployed engineer I designed, built, and deployed the product end to end, and it now runs the daily operations of a paying customer: an operations app, a technicians' mobile app, and a voice assistant over the company's own records, running on site. Before VoiceClaw I spent nearly five years at Input Output (Cardano): promoted from UX designer to Head of Product Design, with 10 direct reports across six products used by millions, then moved into AI research, architecture, and engineering, building agents for internal teams. For more than a decade I have brought builders into a room: I co-founded ETHWaterloo and founded IoT Waterloo and AI Agents Waterloo.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <div class="body">
+      <article class="role">
+        <div class="head"><span><span class="title">Founder &amp; CEO</span> <span class="org">· VoiceClaw, Inc.</span></span><span class="dates">Mar 2026 – Present</span></div>
+        <p class="note">A managed business memory you can talk to. Owners ask about any asset, customer, or job and get an answer by voice or text instead of chasing people.</p>
+        <ul class="items">
+          <li><b>Company.</b> Raised pre-seed funding from LAUNCH (Jason Calacanis). Delaware C-corporation, run from Canada. I own product, engineering, pricing, sales, and partnerships.</li>
+          <li><b>Forward deployed engineering, first paying customer (since Aug 2026).</b> Embedded with a refrigerated trailer leasing and repair company in Kitchener, Ontario. I recorded discovery sessions with the owners and office staff, mapped their shop-to-office workflows, extracted their data from a legacy back-office system with no API, and built on top of their existing systems instead of replacing them. I deploy to their own office server and test on site with the owners: 850+ commits across two production apps since July 2026.</li>
+          <li><b>Command Center.</b> Web operations app for fleet, work orders, customers, contracts, receivables, payables, and parts (TypeScript, Fastify, Postgres). Runs on the customer's own office server behind Cloudflare Tunnel and Access, with role-based tiers and nightly encrypted off-site backups.</li>
+          <li><b>RTS Shop.</b> Mobile app for shop and road-call technicians: work orders, photos, text-message links, and offline edits.</li>
+          <li><b>Business Assistant (voice + chat).</b> Nine typed tools over the company's records. The model picks the lookup; code runs it; a verifier withholds any number, date, ID, or name that is not in the source data (built after I caught a model inventing a VIN). A regression suite gates every deploy (102 of 102 at last ship).</li>
+          <li><b>On-site speech, local model.</b> Replaced browser speech recognition, which sent audio to Google, with on-device recognition (NVIDIA Parakeet via sherpa-onnx) plus speaker and distance gates, so audio stays in the building. Answers come from GLM 5.3 Flash split across two ASUS GX10 (NVIDIA GB10) machines, with automatic cloud fallback and a circuit breaker; 3.5 to 6.9 s a question.</li>
+          <li><b>Vendor Scout.</b> Built a 174,537-business North American repair-vendor database from open Overture Maps data. A local model read 96,270 vendor websites in 80 unattended GPU hours, about 4.4 person-years of manual work, for roughly $6 of electricity.</li>
+          <li><b>Data.</b> Entity resolution across 126 duplicate-customer groups; applied the rule-confirmed merges reversibly and held judgment calls for review.</li>
+          <li><b>Go to market.</b> Shipped voiceclaw.ca and an Exit-Ready offer for owners preparing to sell, with a public MCP server for ChatGPT; Intently, a managed social-listening service (Reddit, LinkedIn, X, Facebook, text alerts); and a referral partner program. Before choosing the beachhead, built voice-agent demos for 10+ verticals: auto repair, painting, insurance claims, pharmacy, restaurants, legal intake, and trade sales.</li>
+        </ul>
+      </article>
+
+      <article class="role">
+        <div class="head"><span class="title">Input Output (IOG)</span><span class="dates">May 2021 – Jan 2026</span></div>
+        <p class="note">Blockchain research and engineering company behind Cardano, serving millions of users worldwide.</p>
+
+        <div class="sub">
+          <div class="head"><span class="title">AI Research, Architecture &amp; Engineering</span><span class="dates">Apr 2024 – Jan 2026</span></div>
+          <p class="note">Moved from leading design into hands-on AI work: research, architecture, design, and engineering. Title: Senior AI Solution Architect from Jul 2025.</p>
+          <ul class="items">
+            <li><b>Internal forward deployed engineering.</b> Worked directly with IOG's procurement and legal teams to find where their requests stalled, then built AI agents for those workflows.</li>
+            <li><b>Procurement voice agent.</b> Staff call one number to submit a request; the agent collects every required field before it reaches procurement, searches approved vendors, and answers policy questions from the team's documents (Vapi, MCP).</li>
+            <li><b>Legal intake and triage.</b> Fast-track and guided paths in, AI routing by request type and urgency, attorney assignment, and a dashboard for the legal team.</li>
+          </ul>
+        </div>
+
+        <div class="sub">
+          <div class="head"><span class="title">Head of Product Design</span><span class="dates">May 2022 – Apr 2024</span></div>
+          <ul class="items">
+            <li>Led a product design organization of 10 direct reports across six initiatives, from vision and roadmap to delivery and measurement, partnering with engineering, business development, and executives.</li>
+            <li>Products: Lace (light wallet), Atala PRISM (self-sovereign identity), Project Catalyst (one of the world's largest decentralized innovation funds), Intersect (on-chain governance), Marlowe (financial smart contracts for non-programmers), and RealFi (micro-finance in emerging markets).</li>
+            <li>Created the "contextual AI in the loop" research method (prompt engineering + Jobs-to-be-Done + AI analysis): research time fell from 295 to 48 hours (83.7%), with $370K to $543K projected annual savings at organization-wide adoption.</li>
+          </ul>
+        </div>
+
+        <div class="sub">
+          <div class="head"><span class="title">UX Product Designer</span><span class="dates">May 2021 – May 2022</span></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h2>Selected builds</h2>
+    <div class="body">
+      <ul class="items">
+        <li><b>Super Intelligence Talent Scout</b> <span class="when">(Oct 2026)</span>. Defines exceptional engineering talent from an employer's own words: extracted 1,645 verbatim requirements from 64 xAI job ads into 13 weighted dimensions and 24 reliability-tested checks (0.99 agreement when the same person is scored twice); scores are percentiles against 200 randomly sampled GitHub engineers. Scouted 60 engineers from 11,543 merged pull requests to vLLM, llama.cpp, and Triton. Every claim links to its source; missing evidence counts as unknown, never no.</li>
+        <li><b>SovereignVoice.</b> Fully private wearable transcription: wearable mic over Bluetooth to a Flutter Android app, over Tailscale to a self-hosted Whisper hub. No cloud anywhere in the path.</li>
+        <li><b>Local AI infrastructure.</b> Two-node GX10 cluster serving GLM 5.3 Flash over Tailscale to all my products; a family AI classroom on an Open WebUI fork with local models and designed voices; a self-hosted agent platform (Rakazo).</li>
+        <li><b>Voice stack work.</b> ReserveVoice, a browser voice receptionist with no voice platform (Silero VAD, Groq, Deepgram) at about 1 s a reply; a streaming text-to-speech shim; speaker-verified barge-in for Pipecat agents.</li>
+        <li><b>Open-source agent skills and research tools.</b> Simplified Technical English (ASD-STE100) as a Claude Code skill, bottom-up TAM skill, artifact mining, browser-agent (Chrome DevTools Protocol control server), and Switch Lab (synthetic Jobs-to-be-Done switch interviews).</li>
+        <li><b>NeuroKick</b> <span class="when">(2023 – 2026)</span>. Privacy-first AI leadership coach (LLM + retrieval) that helps leaders spot cognitive biases in their own speech. User data never leaves the device.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Community</h2>
+    <div class="body">
+      <ul class="items">
+        <li><b>AI Agents Waterloo</b>, founder <span class="when">(2024 – present)</span>. Peer network of AI agent builders.</li>
+        <li><b><a href="https://www.youtube.com/@iantimpilon/videos">AI agents podcast</a></b> <span class="when">(YouTube, 2025 – present)</span>, host. 20+ long-form conversations with builders and researchers, including <a href="https://www.youtube.com/watch?v=H1-nOfSLh-M">Michael Levin</a> (33K views), Geoffrey Huntley, Arjun Krishna (8090), and Michael Miller.</li>
+        <li><b>AI Agents Waterloo Voice Hackathon 2026</b>, organizer and judge <span class="when">(Feb 2026)</span>. Sponsored by smallest.ai and RunAnywhere (YC W26); projects scored by both AI-agent and human judges. Built the event platform myself in nine days (170 commits, adapted from the open-source Flowsint graph app): a live graph of attendees, live streaming with recording, and private messaging.</li>
+        <li><b>Agent-to-Agent Payments Hackathon</b> <span class="when">(2025)</span>, the world's first.</li>
+        <li><b>ETHWaterloo</b>, co-founder <span class="when">(2017, with Liam Horne)</span>. 400+ developers, mentored by Vitalik Buterin, covered by Forbes; many attendees went on to found Web3 companies.</li>
+        <li><b>IoT Waterloo</b>, founder <span class="when">(2014 – 2019)</span>. Grew it into Canada's largest IoT peer-to-peer network.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Writing</h2>
+    <div class="body">
+      <p><b>Cultivating Clarity: The Art of Discerning What Matters Using Contextual Intelligence</b> (book). With Jeff Jonas, Bob Moesta, Michael Levin, Nick Shackleton-Jones, and others. Jobs-to-be-Done, System 1 and 2 thinking, and Information Foraging Theory for product teams.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="body">
+      <p>Carnegie Mellon University, Tepper School of Business. Product Management Academy Certificate.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <div class="body">
+      <dl class="skills">
+        <div><dt>AI systems</dt><dd>LLM agents and tool calling, grounded answers with code verification, retrieval, MCP servers, evaluation and regression gates, local model serving on NVIDIA GB10 hardware, model fallback and circuit breakers.</dd></div>
+        <div><dt>Voice</dt><dd>Real-time speech pipelines, on-device recognition (Parakeet, Whisper), barge-in, speaker verification, Vapi, LiveKit, Pipecat.</dd></div>
+        <div><dt>Engineering</dt><dd>TypeScript, Node, Python, Flutter, Postgres, Docker, Cloudflare (Tunnel, Access), Tailscale, self-hosting.</dd></div>
+      </dl>
+    </div>
+  </section>
+</main>
+</body>
+</html>
